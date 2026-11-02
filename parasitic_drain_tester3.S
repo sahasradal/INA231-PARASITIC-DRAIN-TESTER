@@ -33,28 +33,28 @@
 .equ FLASH_BASE, 0x08000000
 
 
-.equ R32_PWR_CTLR, 0x40007000 	#Power control register
-.equ R32_PWR_CSR, 0x40007004 	#Power control/status register
-.equ R32_PWR_AWUCSR, 0x40007008 #Auto-wakeup control/status register
-.equ R32_PWR_AWUWR, 0x4000700C	#Auto-wakeup window comparison value register
+.equ R32_PWR_CTLR, 0x40007000 		#Power control register
+.equ R32_PWR_CSR, 0x40007004 		#Power control/status register
+.equ R32_PWR_AWUCSR, 0x40007008 	#Auto-wakeup control/status register
+.equ R32_PWR_AWUWR, 0x4000700C		#Auto-wakeup window comparison value register
 .equ R32_PWR_AWUPSC, 0x40007010 	#Auto-wakeup crossover factor register
-.equ R32_RCC_CTLR, 0x40021000 	#Clock control register 0x0000xx83
-.equ R32_RCC_CFGR0, 0x40021004 	#Clock configuration register 0 0x00000000
-.equ R32_RCC_INTR, 0x40021008 	#Clock interrupt register 0x00000000
+.equ R32_RCC_CTLR, 0x40021000 		#Clock control register 0x0000xx83
+.equ R32_RCC_CFGR0, 0x40021004 		#Clock configuration register 0 0x00000000
+.equ R32_RCC_INTR, 0x40021008 		#Clock interrupt register 0x00000000
 .equ R32_RCC_APB2PRSTR, 0x4002100C 	#APB2 peripheral reset register 0x00000000
 .equ R32_RCC_APB1PRSTR, 0x40021010 	# APB1 peripheral reset register 0x00000000
 .equ R32_RCC_AHBPCENR, 0x40021014 	#AHB peripheral clock enable register 0x00000014
-.equ R32_RCC_APB2PCENR, 0x40021018 #APB2 peripheral clock enable register 0x00000000
+.equ R32_RCC_APB2PCENR, 0x40021018 	#APB2 peripheral clock enable register 0x00000000
 .equ R32_RCC_APB1PCENR, 0x4002101C 	#APB1 peripheral clock enable register 0x00000000
 .equ R32_RCC_RSTSCKR, 0x40021024   	#Control/status register
 
-.equ R16_IWDG_CTLR, 0x40003000 	#Control register 0x0000
-.equ R16_IWDG_PSCR, 0x40003004	#Prescaler register 0x0000
-.equ R16_IWDG_RLDR, 0x40003008 	#Reload register 0x0FFF
+.equ R16_IWDG_CTLR, 0x40003000 		#Control register 0x0000
+.equ R16_IWDG_PSCR, 0x40003004		#Prescaler register 0x0000
+.equ R16_IWDG_RLDR, 0x40003008 		#Reload register 0x0FFF
 .equ R16_IWDG_STATR, 0x4000300C 	#Status register
 
-.equ R16_WWDG_CTLR, 0x40002C00 	#Control register 0x007F
-.equ R16_WWDG_CFGR, 0x40002C04 	#Configuration Register 0x007F
+.equ R16_WWDG_CTLR, 0x40002C00 		#Control register 0x007F
+.equ R16_WWDG_CFGR, 0x40002C04 		#Configuration Register 0x007F
 .equ R16_WWDG_STATR, 0x40002C08 	#Status Register
 
 .equ R32_EXTI_INTENR, 0x40010400 	#Interrupt enable register 0x00000000
@@ -64,17 +64,17 @@
 .equ R32_EXTI_SWIEVR, 0x40010410 	#Soft interrupt event register 0x00000000
 .equ R32_EXTI_INTFR, 0x40010414 	#Interrupt flag register
 
-.equ R32_PFIC_ISR1, 0xE000E000 	#PFIC interrupt enable status register 1
-.equ R32_PFIC_ISR2, 0xE000E004 	#PFIC interrupt enable status register 2 
-.equ R32_PFIC_IPR1, 0xE000E020 	#PFIC interrupt pending status register 1 
-.equ R32_PFIC_IPR2, 0xE000E024 	#PFIC interrupt pending status register 2 
+.equ R32_PFIC_ISR1, 0xE000E000 		#PFIC interrupt enable status register 1
+.equ R32_PFIC_ISR2, 0xE000E004 		#PFIC interrupt enable status register 2 
+.equ R32_PFIC_IPR1, 0xE000E020 		#PFIC interrupt pending status register 1 
+.equ R32_PFIC_IPR2, 0xE000E024 		#PFIC interrupt pending status register 2 
 .equ R32_PFIC_ITHRESDR, 0xE000E040 	#PFIC interrupt priority threshold configuration register
-.equ R32_PFIC_CFGR, 0xE000E048 	#PFIC interrupt configuration register
-.equ R32_PFIC_GISR, 0xE000E04C 	#PFIC interrupt global status register 
+.equ R32_PFIC_CFGR, 0xE000E048 		#PFIC interrupt configuration register
+.equ R32_PFIC_GISR, 0xE000E04C 		#PFIC interrupt global status register 
 .equ R32_PFIC_VTFIDR, 0xE000E050 	#PFIC VTF interrupt ID configuration register
 .equ R32_PFIC_VTFADDRR0, 0xE000E060 #PFIC VTF interrupt 0 offset address register
 .equ R32_PFIC_VTFADDRR1, 0xE000E064 #PFIC VTF interrupt 1 offset address register
-.equ R32_PFIC_IENR1, 0xE000E100	#PFIC interrupt enable setting register 1 
+.equ R32_PFIC_IENR1, 0xE000E100		#PFIC interrupt enable setting register 1 
 .equ R32_PFIC_IENR2, 0xE000E104 	#PFIC interrupt enable setting register 2 
 .equ R32_PFIC_IRER1, 0xE000E180 	#PFIC interrupt enable clear register 1 
 .equ R32_PFIC_IRER2, 0xE000E184 	#PFIC interrupt enable clear register 2 
@@ -88,14 +88,14 @@
 .equ R32_PFIC_IPRIOR2, 0xE000E401 	#PFIC interrupt priority configuration register
 .equ R32_PFIC_SCTLR, 0xE000ED10 	#PFIC system control register
 
-.equ INTSYSCR, 0x804 		#Interrupt System Control Register
-.equ MTVEC, 0x305 		#Exception Entry Base Address Register
-.equ DBGMCU_CR, 0x7C0  		#Debug MCU Configuration Register (CSR)
+.equ INTSYSCR, 0x804 				#Interrupt System Control Register
+.equ MTVEC, 0x305 					#Exception Entry Base Address Register
+.equ DBGMCU_CR, 0x7C0  				#Debug MCU Configuration Register (CSR)
  
-.equ R32_STK_CTLR, 0xE000F000 	#System count control register 
-.equ R32_STK_SR, 0xE000F004 	#System count status register 
-.equ R32_STK_CNTR, 0xE000F008	# System counter low register 
-.equ R32_STK_CMPR, 0xE000F010 	#Counting comparison low register
+.equ R32_STK_CTLR, 0xE000F000 		#System count control register 
+.equ R32_STK_SR, 0xE000F004 		#System count status register 
+.equ R32_STK_CNTR, 0xE000F008		# System counter low register 
+.equ R32_STK_CMPR, 0xE000F010 		#Counting comparison low register
 
 
 .equ R32_GPIOA_CFGLR, 0x40010800 	#PA port configuration register low 0x44444444
@@ -110,88 +110,88 @@
 .equ R32_GPIOA_BSHR, 0x40010810 	#PA port set/reset register 0x00000000
 .equ R32_GPIOC_BSHR, 0x40011010 	#PC port set/reset register 0x00000000
 .equ R32_GPIOD_BSHR, 0x40011410 	#PD port set/reset register 0x00000000
-.equ R32_GPIOA_BCR, 0x40010814 	#PA port reset register 0x00000000
-.equ R32_GPIOC_BCR, 0x40011014 	#PC port reset register
-.equ R32_GPIOD_BCR, 0x40011414 	#PD port reset register 0x00000000
+.equ R32_GPIOA_BCR, 0x40010814 		#PA port reset register 0x00000000
+.equ R32_GPIOC_BCR, 0x40011014 		#PC port reset register
+.equ R32_GPIOD_BCR, 0x40011414 		#PD port reset register 0x00000000
 .equ R32_GPIOA_LCKR, 0x40010818 	#PA port configuration lock register 0x00000000
 .equ R32_GPIOC_LCKR, 0x40011018 	#PC port configuration lock register 0x00000000
 .equ R32_GPIOD_LCKR, 0x40011418 	#PD port configuration lock register 
-.equ R32_AFIO_PCFR1, 0x40010004	#AFIO Remap Register 1
+.equ R32_AFIO_PCFR1, 0x40010004		#AFIO Remap Register 1
 .equ R32_AFIO_EXTICR, 0x40010008 	#External interrupt configuration register 1
 
-.equ R32_DMA_INTFR, 0x40020000 	#DMA interrupt status register 0x00000000
+.equ R32_DMA_INTFR, 0x40020000 		#DMA interrupt status register 0x00000000
 .equ R32_DMA_INTFCR, 0x40020004 	#DMA interrupt flag clear register 0x00000000
-.equ R32_DMA_CFGR1, 0x40020008 	#DMA channel 1 configuration register 0x00000000
-.equ R32_DMA_CNTR1, 0x4002000C 	#DMA channel 1 number of data register
+.equ R32_DMA_CFGR1, 0x40020008 		#DMA channel 1 configuration register 0x00000000
+.equ R32_DMA_CNTR1, 0x4002000C 		#DMA channel 1 number of data register
 .equ R32_DMA_PADDR1, 0x40020010 	#DMA channel 1 peripheral address register 0x00000000
 .equ R32_DMA_MADDR1, 0x40020014 	#DMA channel 1 memory address register 0x00000000
-.equ R32_DMA_CFGR2, 0x4002001C 	#DMA channel 2 configuration register 0x00000000
-.equ R32_DMA_CNTR2, 0x40020020 	#DMA channel 2 number of data register 0x00000000
+.equ R32_DMA_CFGR2, 0x4002001C 		#DMA channel 2 configuration register 0x00000000
+.equ R32_DMA_CNTR2, 0x40020020 		#DMA channel 2 number of data register 0x00000000
 .equ R32_DMA_PADDR2, 0x40020024 	#DMA channel 2 peripheral address register 0x00000000
 .equ R32_DMA_MADDR2, 0x40020028 	#DMA channel 2 memory address register 0x00000000
-.equ R32_DMA_CFGR3, 0x40020030 	#DMA channel 3 configuration register 0x00000000
-.equ R32_DMA_CNTR3, 0x40020034 	#DMA channel 3 number of data register 0x00000000
+.equ R32_DMA_CFGR3, 0x40020030 		#DMA channel 3 configuration register 0x00000000
+.equ R32_DMA_CNTR3, 0x40020034 		#DMA channel 3 number of data register 0x00000000
 .equ R32_DMA_PADDR3, 0x40020038 	#DMA channel 3 peripheral address register 0x00000000
 .equ R32_DMA_MADDR3, 0x4002003C 	#DMA channel 3 memory address register 0x00000000
-.equ R32_DMA_CFGR4, 0x40020044 	#DMA channel 4 configuration register 0x00000000
-.equ R32_DMA_CNTR4, 0x40020048 	#DMA channel 4 number of data register 0x00000000
+.equ R32_DMA_CFGR4, 0x40020044 		#DMA channel 4 configuration register 0x00000000
+.equ R32_DMA_CNTR4, 0x40020048 		#DMA channel 4 number of data register 0x00000000
 .equ R32_DMA_PADDR4, 0x4002004C 	#DMA channel 4 peripheral address register 0x00000000
 .equ R32_DMA_MADDR4, 0x40020050 	#DMA channel 4 memory address register 0x00000000
-.equ R32_DMA_CFGR5, 0x40020058	#DMA channel 5 configuration register 0x00000000
-.equ R32_DMA_CNTR5, 0x4002005C 	#DMA channel 5 number of data register 0x00000000
+.equ R32_DMA_CFGR5, 0x40020058		#DMA channel 5 configuration register 0x00000000
+.equ R32_DMA_CNTR5, 0x4002005C 		#DMA channel 5 number of data register 0x00000000
 .equ R32_DMA_PADDR5, 0x40020060 	#DMA channel 5 peripheral address register 0x00000000
 .equ R32_DMA_MADDR5, 0x40020064 	#DMA channel 5 memory address register 0x00000000
-.equ R32_DMA_CFGR6, 0x4002006C 	#DMA channel 6 configuration register 0x00000000
-.equ R32_DMA_CNTR6, 0x40020070 	#DMA channel 6 number of data register 0x00000000
+.equ R32_DMA_CFGR6, 0x4002006C 		#DMA channel 6 configuration register 0x00000000
+.equ R32_DMA_CNTR6, 0x40020070 		#DMA channel 6 number of data register 0x00000000
 .equ R32_DMA_PADDR6, 0x40020074 	#DMA channel 6 peripheral address register 0x00000000
 .equ R32_DMA_MADDR6, 0x40020078 	#DMA channel 6 memory address register 0x00000000
-.equ R32_DMA_CFGR7, 0x40020080 	#DMA channel 7 configuration register 0x00000000
-.equ R32_DMA_CNTR7, 0x40020084 	#DMA channel 7 number of data register 0x00000000
+.equ R32_DMA_CFGR7, 0x40020080 		#DMA channel 7 configuration register 0x00000000
+.equ R32_DMA_CNTR7, 0x40020084 		#DMA channel 7 number of data register 0x00000000
 .equ R32_DMA_PADDR7, 0x40020088 	#DMA channel 7 peripheral address register 0x00000000
 .equ R32_DMA_MADDR7, 0x4002008C 	#DMA channel 7 memory address register
 
 
-.equ R32_ADC_STATR, 0x40012400 	#ADC status register 0x00000000
-.equ R32_ADC_CTLR1, 0x40012404 	#ADC control register 1 0x00000000
-.equ R32_ADC_CTLR2, 0x40012408 	#ADC control register 2 0x00000000
+.equ R32_ADC_STATR, 0x40012400 		#ADC status register 0x00000000
+.equ R32_ADC_CTLR1, 0x40012404 		#ADC control register 1 0x00000000
+.equ R32_ADC_CTLR2, 0x40012408 		#ADC control register 2 0x00000000
 .equ R32_ADC_SAMPTR1, 0x4001240C 	#ADC sample time register 1 0x00000000
 .equ R32_ADC_SAMPTR2, 0x40012410 	#ADC sample time register 2 0x00000000
-.equ R32_ADC_IOFR1, 0x40012414 	#ADC injected channel data offset register 1 0x00000000
-.equ R32_ADC_IOFR2, 0x40012418 	#ADC injected channel data offset register 2 0x00000000
-.equ R32_ADC_IOFR3, 0x4001241C 	#ADC injected channel data offset register 3 0x00000000
-.equ R32_ADC_IOFR4, 0x40012420 	#ADC injected channel data offset register 4 0x00000000
-.equ R32_ADC_WDHTR, 0x40012424 	#ADC watchdog high threshold register 0x00000000
-.equ R32_ADC_WDLTR, 0x40012428 	#ADC watchdog low threshold register 0x00000000
-.equ R32_ADC_RSQR1, 0x4001242C 	#ADC regular sequence register 1 0x00000000
-.equ R32_ADC_RSQR2, 0x40012430 	#ADC regular sequence register 2 0x00000000
-.equ R32_ADC_RSQR3, 0x40012434 	#ADC regular sequence register 3 0x00000000
-.equ R32_ADC_ISQR, 0x40012438 	#ADC injected sequence register 0x00000000
+.equ R32_ADC_IOFR1, 0x40012414 		#ADC injected channel data offset register 1 0x00000000
+.equ R32_ADC_IOFR2, 0x40012418 		#ADC injected channel data offset register 2 0x00000000
+.equ R32_ADC_IOFR3, 0x4001241C 		#ADC injected channel data offset register 3 0x00000000
+.equ R32_ADC_IOFR4, 0x40012420 		#ADC injected channel data offset register 4 0x00000000
+.equ R32_ADC_WDHTR, 0x40012424 		#ADC watchdog high threshold register 0x00000000
+.equ R32_ADC_WDLTR, 0x40012428 		#ADC watchdog low threshold register 0x00000000
+.equ R32_ADC_RSQR1, 0x4001242C 		#ADC regular sequence register 1 0x00000000
+.equ R32_ADC_RSQR2, 0x40012430 		#ADC regular sequence register 2 0x00000000
+.equ R32_ADC_RSQR3, 0x40012434 		#ADC regular sequence register 3 0x00000000
+.equ R32_ADC_ISQR, 0x40012438 		#ADC injected sequence register 0x00000000
 .equ R32_ADC_IDATAR1, 0x4001243C 	#ADC injected data register 1 0x00000000
 .equ R32_ADC_IDATAR2, 0x40012440 	#ADC injected data register 2 0x00000000
 .equ R32_ADC_IDATAR3, 0x40012444 	#ADC injected data register 3 0x00000000
 .equ R32_ADC_IDATAR4, 0x40012448 	#ADC injected data register 4 0x00000000
 .equ R32_ADC_RDATAR, 0x4001244C 	#ADC regular data register 0x00000000
-.equ R32_ADC_DLYR, 0x40012450 	#ADC delayed data register
+.equ R32_ADC_DLYR, 0x40012450 		#ADC delayed data register
 
 
 .equ R16_TIM1_CTLR1, 0x40012C00 	#Control register 1 0x0000
 .equ R16_TIM1_CTLR2, 0x40012C04 	#Control register 2 0x0000
 .equ R16_TIM1_SMCFGR, 0x40012C08 	#Slave mode control register 0x0000
-.equ R16_TIM1_DMAINTENR, 0x40012C0C 	#DMA/interrupt enable register 0x0000
+.equ R16_TIM1_DMAINTENR, 0x40012C0C #DMA/interrupt enable register 0x0000
 .equ R16_TIM1_INTFR, 0x40012C10 	#Interrupt status register 0x0000
 .equ R16_TIM1_SWEVGR, 0x40012C14 	#Event generation register 0x0000
 .equ R16_TIM1_CHCTLR1, 0x40012C18 	#Compare/capture control register 1 0x0000
 .equ R16_TIM1_CHCTLR2, 0x40012C1C 	#Compare/capture control register 2 0x0000
-.equ R16_TIM1_CCER, 0x40012C20 	#Compare/capture enable register 0x0000
-.equ R16_TIM1_CNT, 0x40012C24 	#Counters 0x0000
-.equ R16_TIM1_PSC, 0x40012C28 	#Counting clock prescaler 0x0000
+.equ R16_TIM1_CCER, 0x40012C20 		#Compare/capture enable register 0x0000
+.equ R16_TIM1_CNT, 0x40012C24 		#Counters 0x0000
+.equ R16_TIM1_PSC, 0x40012C28 		#Counting clock prescaler 0x0000
 .equ R16_TIM1_ATRLR, 0x40012C2C 	#Auto-reload value register 0x0000
 .equ R16_TIM1_RPTCR, 0x40012C30 	#Recurring count value register 0x0000
 .equ R16_TIM1_CH1CVR, 0x40012C34 	#Compare/capture register 1 0x0000
 .equ R16_TIM1_CH2CVR, 0x40012C38 	#Compare/capture register 2 0x0000
 .equ R16_TIM1_CH3CVR, 0x40012C3C 	#Compare/capture register 3 0x0000
 .equ R16_TIM1_CH4CVR, 0x40012C40 	#Compare/capture register 4 0x0000
-.equ R16_TIM1_BDTR, 0x40012C44 	#Brake and deadband registers 0x0000
+.equ R16_TIM1_BDTR, 0x40012C44 		#Brake and deadband registers 0x0000
 .equ R16_TIM1_DMACFGR, 0x40012C48 	#DMA control register 0x0000
 .equ R16_TIM1_DMAADR, 0x40012C4C 	#DMA address register for continuous mode
 
@@ -199,14 +199,14 @@
 .equ R16_TIM2_CTLR1, 0x40000000 	#TIM2 control register1 0x0000
 .equ R16_TIM2_CTLR2, 0x40000004 	#TIM2 control register2 0x0000
 .equ R16_TIM2_SMCFGR, 0x40000008 	#TIM2 Slave mode control register 0x0000
-.equ R16_TIM2_DMAINTENR, 0x4000000C 	#TIM2 DMA/interrupt enable register
+.equ R16_TIM2_DMAINTENR, 0x4000000C #TIM2 DMA/interrupt enable register
 .equ R16_TIM2_INTFR, 0x40000010 	#TIM2 interrupt status register 0x0000
 .equ R16_TIM2_SWEVGR, 0x40000014 	#TIM2 event generation register 0x0000
 .equ R16_TIM2_CHCTLR1, 0x40000018 	#TIM2 compare/capture control register1 0x0000
 .equ R16_TIM2_CHCTLR2, 0x4000001C 	#TIM2 compare/capture control register2 0x0000
-.equ R16_TIM2_CCER, 0x40000020 	#TIM2 compare/capture enable register 0x0000
-.equ R16_TIM2_CNT, 0x40000024 	#TIM2 counter 0x0000
-.equ R16_TIM2_PSC, 0x40000028 	#TIM2 count clock prescaler 0x0000
+.equ R16_TIM2_CCER, 0x40000020 		#TIM2 compare/capture enable register 0x0000
+.equ R16_TIM2_CNT, 0x40000024 		#TIM2 counter 0x0000
+.equ R16_TIM2_PSC, 0x40000028 		#TIM2 count clock prescaler 0x0000
 .equ R16_TIM2_ATRLR, 0x4000002C 	#TIM2 auto-reload register 0x0000
 .equ R16_TIM2_CH1CVR, 0x40000034 	#TIM2 compare/capture register1 0x0000
 .equ R16_TIM2_CH2CVR, 0x40000038 	#TIM2 compare/capture register2 0x0000
@@ -218,15 +218,15 @@
 
 .equ R32_USART_STATR, 0x40013800 	#UASRT status register 0x000000C0
 .equ R32_USART_DATAR, 0x40013804 	#UASRT data register 0x000000XX
-.equ R32_USART_BRR, 0x40013808 	#UASRT baud rate register 0x00000000
+.equ R32_USART_BRR, 0x40013808 		#UASRT baud rate register 0x00000000
 .equ R32_USART_CTLR1, 0x4001380C 	#UASRT control register 1 0x00000000
 .equ R32_USART_CTLR2, 0x40013810 	#UASRT control register 2 0x00000000
 .equ R32_USART_CTLR3, 0x40013814 	#UASRT control register 3 0x00000000
-.equ R32_USART_GPR, 0x40013818 	#UASRT protection time and prescaler register
+.equ R32_USART_GPR, 0x40013818 		#UASRT protection time and prescaler register
 
 
-.equ R16_I2C_CTLR1, 0x40005400 	#I2C control register 1 0x0000
-.equ R16_I2C_CTLR2, 0x40005404 	#I2C control register 2 0x0000
+.equ R16_I2C_CTLR1, 0x40005400 		#I2C control register 1 0x0000
+.equ R16_I2C_CTLR2, 0x40005404 		#I2C control register 2 0x0000
 .equ R16_I2C_OADDR1, 0x40005408 	#I2C address register 1 0x0000
 .equ R16_I2C_OADDR2, 0x4000540C 	#I2C address register 2 0x0000
 .equ R16_I2C_DATAR,  0x40005410 	#I2C data register 0x0000
@@ -234,14 +234,14 @@
 .equ R16_I2C_STAR2,  0x40005418 	#I2C status register 2 0x0000
 .equ R16_I2C_CKCFGR, 0x4000541C 	#I2C clock register
 
-.equ R16_SPI_CTLR1, 0x40013000 	#SPI Control register1 0x0000
-.equ R16_SPI_CTLR2, 0x40013004 	#SPI Control register2 0x0000
-.equ R16_SPI_STATR, 0x40013008 	#SPI Status register 0x0002
-.equ R16_SPI_DATAR, 0x4001300C 	#SPI Data register 0x0000
-.equ R16_SPI_CRCR,  0x40013010 	#SPI Polynomial register 0x0007
-.equ R16_SPI_RCRCR, 0x40013014 	#SPI Receive CRC register 0x0000
-.equ R16_SPI_TCRCR, 0x40013018 	#SPI Transmit CRC register 0x0000
-.equ R16_SPI_HSCR,  0x40013024 	#SPI High-speed control register
+.equ R16_SPI_CTLR1, 0x40013000 		#SPI Control register1 0x0000
+.equ R16_SPI_CTLR2, 0x40013004 		#SPI Control register2 0x0000
+.equ R16_SPI_STATR, 0x40013008 		#SPI Status register 0x0002
+.equ R16_SPI_DATAR, 0x4001300C 		#SPI Data register 0x0000
+.equ R16_SPI_CRCR,  0x40013010 		#SPI Polynomial register 0x0007
+.equ R16_SPI_RCRCR, 0x40013014 		#SPI Receive CRC register 0x0000
+.equ R16_SPI_TCRCR, 0x40013018 		#SPI Transmit CRC register 0x0000
+.equ R16_SPI_HSCR,  0x40013024 		#SPI High-speed control register
 
 .equ R16_ESIG_FLACAP, 0x1FFFF7E0 	#Flash capacity register 0xXXXX
 .equ R32_ESIG_UNIID1, 0x1FFFF7E8 	#UID register 1 0xXXXXXXXX
@@ -259,7 +259,7 @@
 .equ R32_FLASH_MODEKEYR,  0x40022024 	#Extended key register X
 .equ R32_FLASH_BOOT_MODEKEYR,  0x40022028 #Unlock BOOT key register
 
-.equ R32_EXTEN_CTR, 0x40023800 	#Configure extended control registers
+.equ R32_EXTEN_CTR, 0x40023800 		#Configure extended control registers
 
 .equ PFIC_KEY1, 0xFA050000
 .equ PFIC_KEY2, 0xBCAF0000
@@ -275,13 +275,13 @@
 .equ  SYSTICK_CTLR_STCLK, (1<<2)
 .equ  SYSTICK_CTLR_STRE,  (1<<3)
 .equ  SYSTICK_CTLR_SWIE, (1<<31) 
-.equ data_command1 , 0x09		#0b00001001# data control nibble ,led on P3, EN 0 on P2, R/W 0 (write) in P1 , RS 1 (0 instruction, 1 data) = 1001  =0x09
+.equ data_command1 , 0x09				#0b00001001# data control nibble ,led on P3, EN 0 on P2, R/W 0 (write) in P1 , RS 1 (0 instruction, 1 data) = 1001  =0x09
 .equ data_command2 , 0x0d               #0b00001101# data control nibble , 1101  = 0x0D   - EN goes hi=1
-.equ data_command3 , 0xf9		#0b00001001# data control nibble , 1011  = 0x0B   - EN goes low=0
-.equ inst_command1 , 0x08	        #0b00001000# instruction control nibble ,  led on en-lo,Rw-0,rs =0   = 1000   = 0x08
+.equ data_command3 , 0xf9				#0b00001001# data control nibble , 1011  = 0x0B   - EN goes low=0
+.equ inst_command1 , 0x08	        	#0b00001000# instruction control nibble ,  led on en-lo,Rw-0,rs =0   = 1000   = 0x08
 .equ inst_command2 , 0x0C               #0b00001100# instruction control nibble ,  led on,EN hi , rs/RW 0    = 1100   = 0x0C
-.equ inst_command3 , 0xf8		#0b00001000# instruction control nibble  , led on, EN lo ,rs/rw 0    = 1000   = 0x08
-.equ LCDWAD , 0x4E 			# 1602 LCD address
+.equ inst_command3 , 0xf8				#0b00001000# instruction control nibble  , led on, EN lo ,rs/rw 0    = 1000   = 0x08
+.equ LCDWAD , 0x4E 						# 1602 LCD address
 .equ INAWAD , 0x80
 .equ INARAD , 0x81
 .equ CONFIG_REG ,  0x00
@@ -317,7 +317,7 @@ average         = 0x20000058
 offset          = 0x2000005C
 
 # Calibration Data (The State)
-#CURRENT_LSB = 0.0025 # Amps per bit (2.5 mA/bit)
+#CURRENT_LSB = 0.0025	 # Amps per bit (2.5 mA/bit)
 #CAL_VALUE_DEC = 2048  # Decimal value for Cal Register,5120,0x1400 for .001A lsb
 #CAL_VALUE_HEX = 0x0800# Hex value to write (MSB: 0x08, LSB: 0x00)
 # Derived LSBs
@@ -521,6 +521,7 @@ sp_init:
 	call delay1S
 	call cleardisplay
 	call I2C_STOP
+	call delay10ms
 
 	call I2C_START
 	li x15,INAWAD
@@ -532,7 +533,7 @@ sp_init:
 	li x15,	0x00			# low of CAL_VALUE_HEX = 0x0800
 	call I2C_WRITE
 	call I2C_STOP
-	call delay1ms
+	call delay10ms
 	call I2C_START
 	li x15,INAWAD
 	call SEND_ADDRESS
@@ -543,7 +544,7 @@ sp_init:
 	li x15,	0x27			# low of Config_VALUE_HEX = 0x4527
 	call I2C_WRITE
 	call I2C_STOP
-	call delay1ms
+	call delay10ms
 
 infinite_loop:
 	call I2C_START
@@ -556,7 +557,7 @@ infinite_loop:
 	li t0 ,2
 	li t1 , volt
 	call MULTI_READ			# stores 2 bytes in volt SRAM
-	call delay1ms
+	call delay10ms
 	call I2C_START
 	li x15,INAWAD
 	call SEND_ADDRESS
@@ -567,7 +568,7 @@ infinite_loop:
 	li t0 ,2
 	li t1 , power
 	call MULTI_READ			# stores 2 bytes in power SRAM
-	call delay1ms
+	call delay10ms
 	call I2C_START
 	li x15,INAWAD
 	call SEND_ADDRESS
@@ -578,7 +579,7 @@ infinite_loop:
 	li t0 ,2
 	li t1 , curr
 	call MULTI_READ			# stores 2 bytes in curr SRAM
-	call delay1ms
+	call delay10ms
 
 
 calculate:
@@ -649,10 +650,11 @@ take_average:
 	li x15,LCDWAD
 	call SEND_ADDRESS
 	pos 0,0
-	string message6
+	string message6				# display message "rezero complete"
 	call delay1S
 	call cleardisplay
 	call I2C_STOP
+	call delay500ms
 skip_average:
 
 	la    t0, offset
@@ -715,7 +717,7 @@ skip_hold_status_change:
 is_positive:	
 	slli a0, a0, 16   		# Shift left to top 16 bits      
 	srai a0, a0, 16         # Arithmetic shift right back (copies sign bit)
-	# Input in a0 (INA231 Register Value) #2500 = (𝑥 ≪ 11)+(𝑥 ≪ 8)+(𝑥 ≪ 7)+(𝑥 ≪6)+(𝑥 ≪2)
+	# Input in a0 (INA231 Register Value) #2500 = (𝑥 ≪ 11)+(𝑥 ≪ 8)+(𝑥 ≪ 7)+(𝑥 ≪6)+(𝑥 ≪2) , Multiply by 25 to convert to uA (for 0.001 Ohm shunt)
 	slli t0, a0, 11			# t0 = x * 2048 
 	slli t1, a0, 8     		
 	add  t0, t0, t1  		# t0 = x * (2048 + 256)  
@@ -725,6 +727,13 @@ is_positive:
 	add  t0, t0, t1   		# t0 = x * (2432 + 64)		
 	slli t1, a0, 2 			    
 	add  a0, t0, t1 		# a0 = x * (2496 + 4) 
+
+# Multiply by 25 to convert to uA (for 0.1 Ohm shunt)  , if using 0.1ohm shunt comment out above block
+	#slli t0, a0, 4          # t0 = x * 16
+	#slli t1, a0, 3          # t1 = x * 8
+	#add  t0, t0, t1         # t0 = x * 24
+	#add  a0, t0, a0         # a0 = x * 25  
+
 
 	call I2C_START
 	li a5,LCDWAD
@@ -827,6 +836,21 @@ POWER_calc:
 
     # 3. Divide by 2 to get 62.5 multiplier
     srli a0, t0, 1      		# a0 = Power in milliwatts (mW)
+
+
+# --- Multiply by 625: (x*512 + x*64 + x*32 + x*16 + x*1) ---for 0.1R shunt
+#    slli t0, a0, 9           # x * 512
+#    slli t1, a0, 6           # x * 64
+#    add  t0, t0, t1
+#    slli t1, a0, 5           # x * 32
+#    add  t0, t0, t1
+#    slli t1, a0, 4           # x * 16
+#    add  t0, t0, t1
+#    add  a0, t0, a0          # a0 = Power in uW (e.g., 49 * 62500... or raw 49 * 625 = 30,625 uW)
+
+    # Note: If reading raw V_SHUNT fallback (49 counts):
+    # 49 * 62500 = 3,062,500 uW = 3.0625 W
+
 
 	call I2C_START
 	li a5,LCDWAD
